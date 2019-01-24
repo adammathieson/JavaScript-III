@@ -86,6 +86,24 @@ Hero.prototype.awesomeMove = function() {
 */
 
 // Test you work by un-commenting these 3 objects and the list of console logs below:
+const belichick = new Villain({
+  createdAt: new Date(),
+  dimensions: {
+    length: 4,
+    width: 2,
+    height: 4,
+  },
+  healthpoints: 15,
+  name: 'Vinny',
+  team: 'Bad Guy',
+  weapons: [
+    'Climate Change'
+  ],
+  language: 'Romansh',
+  facialHair: 'Goatee',
+  specialItem: 'Amulet'
+})
+
   const coolGuy = new Hero({
     createdAt: new Date(),
     dimensions: {
@@ -99,7 +117,7 @@ Hero.prototype.awesomeMove = function() {
     weapons: [
       'bare knuckles'
     ],
-    language: 'c++',
+    language: 'modern dance',
     eyewear: 'mirrored aviators',
     vehicle: 'cherry red Miata'
   })
@@ -164,6 +182,8 @@ Hero.prototype.awesomeMove = function() {
   console.log(archer.greet()); // Lilith offers a greeting in Elvish.
   console.log(mage.takeDamage()); // Bruce took damage.
   console.log(swordsman.destroy()); // Sir Mustachio was removed from the game.
+  console.log(belichick.sneakAttack()); // Vinny throws Amulet
+  console.log(coolGuy.awesomeMove()); // Dalton jumps into cherry red Miata and does a sick burnout
 
 
   // Stretch task: 
